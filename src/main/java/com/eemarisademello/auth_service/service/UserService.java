@@ -3,6 +3,8 @@ package com.eemarisademello.auth_service.service;
 import com.eemarisademello.eletiva_geotec_client.dto.UserDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 @Service
 @RequiredArgsConstructor
