@@ -13,7 +13,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // Disables CSRF for API JWT authentication
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/login").permitAll()
+                        .requestMatchers("/auth/Oauth/google/login").permitAll()
                         .anyRequest().authenticated()
                 );
 

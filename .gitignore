@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Google Oauth API ###
+# Google OAuth credentials
+src/main/resources/google_oauth_api/
+src/main/resources/google_oauth_api/*
