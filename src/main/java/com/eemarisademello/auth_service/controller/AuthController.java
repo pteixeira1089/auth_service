@@ -55,6 +55,7 @@ public class AuthController {
             // Check if user exists in users service
             var user = userService.getUserByEmail(email);
             if (user == null) {
+                System.out.println("Usuário não encontrado: " + email);
                 return ResponseEntity.status(401).body("Usuário não autorizado");
             }
 
